@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
+and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+
+<front>
+<journal-meta>
+<journal-id></journal-id>
+
+<journal-title-group>
+<journal-title>Journal Name</journal-title>
+</journal-title-group>
+<issn></issn>
+
+<publisher>
+<publisher-name></publisher-name>
+</publisher>
+</journal-meta>
+
+
+<article-meta>
+
+
+<title-group>
+<article-title>State-wide analysis of suitable areas for Opportunistic
+Recharge Enhancement on Roads and Hillslopes of Arizona</article-title>
+</title-group>
+
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">0000-0002-5352-7215</contrib-id>
+<name>
+<surname>Lima</surname>
+<given-names>Ryan E.</given-names>
+</name>
+<string-name>Ryan E. Lima</string-name>
+<degrees>PhD</degrees>
+<email>ryan.lima@nau.edu</email>
+<role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+<role vocab="https://credit.niso.org" vocab-term="software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+<role vocab="https://credit.niso.org" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+<xref ref-type="aff" rid="aff-1">a</xref>
+<xref ref-type="aff" rid="aff-2">b</xref>
+<xref ref-type="aff" rid="aff-3">c</xref>
+<xref ref-type="corresp" rid="cor-1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Lewis</surname>
+<given-names>Rayni</given-names>
+</name>
+<string-name>Rayni Lewis</string-name>
+
+<role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+<role vocab="https://credit.niso.org" vocab-term="software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+<role vocab="https://credit.niso.org" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+<xref ref-type="aff" rid="aff-1">a</xref>
+<xref ref-type="aff" rid="aff-3">c</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Springer</surname>
+<given-names>Abraham E.</given-names>
+</name>
+<string-name>Abraham E. Springer</string-name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="aff-1">a</xref>
+<xref ref-type="aff" rid="aff-3">c</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Sankey</surname>
+<given-names>Temuulen Tsagaan</given-names>
+</name>
+<string-name>Temuulen Tsagaan Sankey</string-name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="aff-1">a</xref>
+<xref ref-type="aff" rid="aff-2">b</xref>
+</contrib>
+</contrib-group>
+<aff id="aff-1">
+<institution-wrap>
+<institution>Northern Arizona University</institution>
+</institution-wrap>
+
+
+
+
+
+
+
+</aff>
+<aff id="aff-2">
+<institution-wrap>
+<institution>School of Informatics, Computing &amp; Cyber
+Systems</institution>
+</institution-wrap>
+
+
+
+
+
+
+
+</aff>
+<aff id="aff-3">
+<institution-wrap>
+<institution>School of Earth and Sustainability</institution>
+</institution-wrap>
+
+
+
+
+
+
+
+</aff>
+<author-notes>
+<corresp id="cor-1">ryan.lima@nau.edu</corresp>
+</author-notes>
+
+<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2025-05-27">
+<year>2025</year>
+<month>5</month>
+<day>27</day>
+</pub-date>
+
+
+
+
+
+
+
+<history></history>
+
+
+<abstract>
+<p>None</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<kwd>Road-MAR</kwd>
+<kwd>Hillslope-MAR</kwd>
+<kwd>Mountain Front Recharge (MFR)</kwd>
+<kwd>Mountain Block Recharge (MBR)</kwd>
+<kwd>Recharge</kwd>
+<kwd>Arizona</kwd>
+<kwd>Opportunistic Recharge Enhancement</kwd>
+</kwd-group>
+
+
+
+
+</article-meta>
+
+</front>
+
+<body>
+<sec id="sec-intro">
+  <title>1 Introduction</title>
+</sec>
+<sec id="sec-data-methods">
+  <title>2 Data &amp; Methods</title>
+</sec>
+<sec id="sec-conclusions">
+  <title>3 Conclusion</title>
+</sec>
+<sec id="references">
+  <title>References</title>
+</sec>
+</body>
+
+<back>
+</back>
+
+<sub-article article-type="notebook" id="nb-3-nb-1">
+<front-stub>
+</front-stub>
+
+<body>
+<sec id="sec-lit-nb-1">
+  <title>Literature Reviewed</title>
+  <sec id="cell-4f91bc14ba9a5493-nb-1" specific-use="notebook-content">
+  <p><bold>Uncovering the gaps in manage aquifer recharge for
+  sustainabile groundwater: A focus on hillslopes and mountains</bold>
+  [@meles_uncovering_2024]</p>
+  <p><italic>Key findings:</italic></p>
+  <disp-quote>
+    <list list-type="order">
+      <list-item>
+        <p>This paper recommends using mountain/hillslope managed
+        aquifer recharge Hillslope-MAR and water chaptured by roadside
+        channel networks as a potential new source and setting for MAR
+        applications.</p>
+      </list-item>
+      <list-item>
+        <p>Suggests that road system-based managed aquifer recharge
+        (Road-MAR) could have high potential for enhancing recharge
+        through things like infiltrations channels.</p>
+      </list-item>
+      <list-item>
+        <p>Roads on mountain sides and hillslopes passing through areas
+        with high concentrations of lineaments could be suitable
+        areas</p>
+      </list-item>
+    </list>
+  </disp-quote>
+  <p><italic>Keywords:</italic></p>
+  <p>Managed Aquifer Recharge (MAR); Attenuation Zone, Groundwater,
+  Lineaments/Faults, Hillslope-MAR, Road-MAR</p>
+  </sec>
+  <sec id="cell-214b6c9ac3767353-nb-1" specific-use="notebook-content">
+  <p><bold>Mountain-Block Recharge: A Review of Current
+  Understanding</bold> [@markovich_mountainblock_2019]</p>
+  <p><italic>Key findings:</italic></p>
+  <disp-quote>
+    <list list-type="order">
+      <list-item>
+        <p>Mountain-block recharge confirmed as important source of
+        recharge to basin aquifers in a variety of climatic and geologic
+        settings globally.</p>
+      </list-item>
+      <list-item>
+        <p>Recent work advanced the understanding of fundamental
+        controls on mountain-block recharge ans somewhat improved
+        methods for characterization.</p>
+      </list-item>
+      <list-item>
+        <p>Future research should aim to acquire subsurface data in
+        mountain blocks and at the mountain front.</p>
+      </list-item>
+    </list>
+  </disp-quote>
+  <p><italic>Keywords:</italic></p>
+  <p>Mountain Front Recharge (MFR), Mountain Block Recharge (MBR),
+  Aquifer Recharge, Review</p>
+  </sec>
+  <sec id="cell-4c3f902fff486bc8-nb-1" specific-use="notebook-content">
+  <p><bold>Mountain-block hydrology and mountain-front recharge</bold>
+  [@hogan_mountain-block_2004]</p>
+  <p><italic>Key findings:</italic></p>
+  <disp-quote>
+    <list list-type="order">
+      <list-item>
+        <p>Explains the general processes at work in Mountain fronts and
+        Mountain blocks</p>
+      </list-item>
+      <list-item>
+        <p>Provides practical advice for delineating the mountain front
+        and the mountain block</p>
+      </list-item>
+    </list>
+  </disp-quote>
+  <p><italic>Keywords:</italic></p>
+  <p>Mountain Front Zone, Mountain Block</p>
+  </sec>
+  <sec id="e363cd0cebdc1b-nb-1" specific-use="notebook-content">
+  <p><bold>Title</bold> [citation]</p>
+  <p><italic>Key findings:</italic></p>
+  <disp-quote>
+    <list list-type="order">
+      <list-item>
+        <p>text</p>
+      </list-item>
+    </list>
+  </disp-quote>
+  <p><italic>Keywords:</italic></p>
+  </sec>
+  <sec id="f2fe55c62c41276d-nb-1" specific-use="notebook-content">
+</sec>
+<sec id="notes-nb-1">
+  <title>Notes</title>
+  <disp-quote>
+    <p>Menbru Meles suggested including: - Contributing areas for
+    roadside channel segments - slope and slope length to calculate the
+    volume of runoff that passes through these systems</p>
+  </disp-quote>
+  <disp-quote>
+    <p>Question:</p>
+  </disp-quote>
+  <p>If we remove overland flow or intercept shallow soil or groundwater
+  flow how will it impact ecosystems downstream? In other words how do
+  we ensure that the water we capture is not supporting some riparian
+  ecosystem downstream that we are sacrificing to increase recharge
+  deeper in the aquifer.</p>
+  </sec>
+</sec>
+</body>
+
+
+
+<back>
+</back>
+
+
+</sub-article>
+
+</article>
