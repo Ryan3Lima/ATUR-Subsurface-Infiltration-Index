@@ -94,7 +94,7 @@ Lineaments are linear or curvilinear surface features that may reflect subsurfac
 
 The output of the LINE tool was exported as a shapefile and analyzed using the Line Density Tool in ArcGIS Pro to calculate the density of lineaments within a circular neighborhood with a radius of 1km, providing lineament density values between 0.001 and 5.55 km/km2. While the presence of lineaments likely enhances the secondary Pm and Po, the absence of lineaments does not necessarily reduce overall recharge suitability. Therefore, we scaled lineament density between 5 and 10 for the thematic layer scaled lineament density (sLD); this is consistent with other GIS-MCDA studies evaluating recharge potential (Shaban et al., 2006).
 
-** Table of parameters values used in LINE algorithm **
+**Table of parameters values used in LINE algorithm**
 
 | Parameters | Description                  | Units             | Default Values | Distance (m) |
 |---------------|---------------|---------------|---------------|---------------|
@@ -107,7 +107,7 @@ The output of the LINE tool was exported as a shapefile and analyzed using the L
 
 : Default parameters values used to detect lineaments from the TPI and SD rasters with the LINE module of Catalyst 3.0.2. Column one shows the parameter abbreviations commonly used in the literature. Column two describes the parameters. Column three describes the units each parameter utilizes, column four shows the default values, and column five is the linear distance that the default values translate to when using a 30x30 m raster.
 
-** Lineament Density scaled **
+**Lineament Density scaled**
 
 |Start Value km/km^2| End Value km/km^2| Scaled Value|
 |-------------------|------------------|-------------|
