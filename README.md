@@ -15,13 +15,13 @@ This dataset represents the Arizona Subsurface Infiltration Index v.2 (SbII), a 
 
 The index is derived from a weighted linear combination of four geologic and structural variables that influence the movement of water through the vadose zone and into underlying aquifers:
 
-Matrix Permeability (Pm) – log-transformed saturated hydraulic conductivity (log K) from the GLobal HYdrogeology MaPS (GLHYMPS v2) dataset (Huscroft et al., 2018), which reflects the ability of the geologic matrix to transmit water.
+**Matrix Permeability (Pm)** – log-transformed saturated hydraulic conductivity (log K) from the GLobal HYdrogeology MaPS (GLHYMPS v2) dataset (Huscroft et al., 2018), which reflects the ability of the geologic matrix to transmit water.
 
-Matrix Porosity (Po) – volumetric porosity values from GLHYMPS v2, which influence the capacity for water storage within rock or sediment pore spaces.
+**Matrix Porosity (Po)** – volumetric porosity values from GLHYMPS v2, which influence the capacity for water storage within rock or sediment pore spaces.
 
-Lineament Density (LD) – estimated from topographic and statistical surface derivatives using automated lineament extraction. These features are used as proxies for secondary permeability from faults and fractures, which can enhance infiltration along structurally controlled zones.
+**Lineament Density (LD)** – estimated from topographic and statistical surface derivatives using automated lineament extraction. These features are used as proxies for secondary permeability from faults and fractures, which can enhance infiltration along structurally controlled zones.
 
-Presence of Karst or Pseudokarst Lithologies (Pk) – derived from national-scale karst mapping (Weary and Doctor, 2014), this factor accounts for lithologies prone to dissolution (e.g., carbonates, evaporites) or lava tube development, which can produce highly permeable pathways for focused recharge.
+**Presence of Karst or Pseudokarst Lithologies (Pk)** – derived from national-scale karst mapping (Weary and Doctor, 2014), this factor accounts for lithologies prone to dissolution (e.g., carbonates, evaporites) or lava tube development, which can produce highly permeable pathways for focused recharge.
 
 Each input layer was reclassified to a common suitability scale from 1 to 10, where 10 indicates the highest potential for infiltration and 1 the lowest. This reclassification was based on literature-supported thresholds, expert knowledge, and the distribution of values within the Arizona study area (see Methodology section for details).
 
