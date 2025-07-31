@@ -43,21 +43,22 @@ This layer is intended to provide a spatially explicit, state-wide estimate of i
 - N.A. Created in 2025 using data released from 2014 - 2024
 
 ## File Descriptions
-| File Name | Description | Format | dtype | Size |
-|-----------|-------------|--------|-------|------|
-|Lineaments_30m_SD_TPI_gt1000m|Lineaments extracted using Catalyst LINE from 30m DEM, cleaned lines smaller than 1000m removed|.zip| shapefile|11,176 kb|
-|Lineament_Density_rad1000m_kmkm2|Line Density of Lineaments_30m_SD_TPI_gt1000m using 1000m radius |.tif|Float32|2,299,507 kb|
-|GLHYMPS_v2_Permeability|Extracted values from GLHYMPSv2 polygon for permeability logk x 1000|.tif|64bit|5,791,738 kb|
-|GLHYMPS_v2_Porostiy|Extracted values from GLHYMPSv2 polygon for Porosity %|.tif|64bit|5,792,315|
-|sLD_5_10_|Lineament Density scaled 5 - 10|.tif|Uint8|575,195 kb|
-|sPk_5_10_|Potential Karst, rasterized from Karst shapefile scaled 5 - 10|.tif|Uint8|839,966 kb|
-|sPo_1_10_|Matrix Porosity scaled 1 - 10|.tif|Uint8|724,639 kb|
-|sPm_1_10_|Matrix Permeability (logkx1000) scaled 1 - 10|.tif|Uint8|724,639 kb|
-|Sbii_v2_|Weighted Linear Combination of sPk, sPo, sLD, sPm|.tif|Float32|2,299,506 kb|
-|Evaporites48_AZHU8p|Shapefile of evaporites from USA Karst |.zip|Shapefile|693 kb|
-|Piping48_AZHU8p|Shapefile of piping karst from USA Karst|.zip|Shapefile|102 kb|
-|Volcanics48_AZHU8p|Shapefile of volcanic  Pseudokarst from USA Karst|.zip|Shapefile|241 kb|
-|Carbonates48_AZHU8p|Shapefile of carbonates from USA Karst |.zip|Shapefile|1,137 kb|
+| File Name                        | Description                                                                      | Format | dtype    | Size         |
+|----------------------------------|----------------------------------------------------------------------------------|--------|----------|--------------|
+| Lineaments_30m_SD_TPI_gt1000m   | Lineaments extracted using Catalyst LINE from 30m DEM, cleaned lines <1000m     | .zip   | shapefile| 11,176 kb    |
+| Lineament_Density_rad1000m_kmkm2| Line density of above lineaments using 1000m radius                             | .tif   | Float32  | 2,299,507 kb |
+| GLHYMPS_v2Permeability           | Permeability logk x1000 extracted from GLHYMPSv2                                | .tif   | 64bit    | 5,791,738 kb |
+| GLHYMPS_v2_Porosity              | Porosity (%) from GLHYMPSv2                                                     | .tif   | 64bit    | 5,792,315 kb |
+| sLD_5_10                         | Lineament density scaled 5–10                                                   | .tif   | Uint8    | 575,195 kb   |
+| sPk_510                          | Potential karst (rasterized, scaled 5–10)                                       | .tif   | Uint8    | 839,966 kb   |
+| sPo_110                          | Matrix porosity scaled 1–10                                                     | .tif   | Uint8    | 724,639 kb   |
+| sPm_110                          | Matrix permeability scaled 1–10                                                 | .tif   | Uint8    | 724,639 kb   |
+| Sbii_v2_                         | Weighted combination of sPk, sPo, sLD, sPm                                      | .tif   | Float32  | 2,299,506 kb |
+| Evaporites48_AZHU8p             | Shapefile of evaporites from USA Karst                                         | .zip   | Shapefile| 693 kb       |
+| Piping48_AZHU8p                 | Shapefile of piping karst from USA Karst                                       | .zip   | Shapefile| 102 kb       |
+| Volcanics48_AZHU8p              | Shapefile of volcanic pseudokarst from USA Karst                               | .zip   | Shapefile| 241 kb       |
+| Carbonates48_AZHU8p             | Shapefile of carbonates from USA Karst                                         | .zip   | Shapefile| 1,137 kb     |
+
 
 ## Methodology
 
