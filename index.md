@@ -1,4 +1,5 @@
-# Arizona Subsurface Infiltration Index v.2
+
+Arizona Subsurface Infiltration Index v.2
 
 - This layer and its associated data will be available on hydroshare soon
 - The Sbii_v2_.tif will be published on ArcGIS online and available to the public soon
