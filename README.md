@@ -43,21 +43,22 @@ This layer is intended to provide a spatially explicit, state-wide estimate of i
 - N.A. Created in 2025 using data released from 2014 - 2024
 
 ## File Descriptions
-| File Name | Description | Format | dtype | Size |
-|-----------|-------------|--------|-------|------|
-|Lineaments_30m_SD_TPI_gt1000m|Lineaments extracted using Catalyst LINE from 30m DEM, cleaned lines smaller than 1000m removed|.zip| shapefile|11,176 kb|
-|Lineament_Density_rad1000m_kmkm2|Line Density of Lineaments_30m_SD_TPI_gt1000m using 1000m radius |.tif|Float32|2,299,507 kb|
-|GLHYMPS_v2_Permeability|Extracted values from GLHYMPSv2 polygon for permeability logk x 1000|.tif|64bit|5,791,738 kb|
-|GLHYMPS_v2_Porostiy|Extracted values from GLHYMPSv2 polygon for Porosity %|.tif|64bit|5,792,315|
-|sLD_5_10_|Lineament Density scaled 5 - 10|.tif|Uint8|575,195 kb|
-|sPk_5_10_|Potential Karst, rasterized from Karst shapefile scaled 5 - 10|.tif|Uint8|839,966 kb|
-|sPo_1_10_|Matrix Porosity scaled 1 - 10|.tif|Uint8|724,639 kb|
-|sPm_1_10_|Matrix Permeability (logkx1000) scaled 1 - 10|.tif|Uint8|724,639 kb|
-|Sbii_v2_|Weighted Linear Combination of sPk, sPo, sLD, sPm|.tif|Float32|2,299,506 kb|
-|Evaporites48_AZHU8p|Shapefile of evaporites from USA Karst |.zip|Shapefile|693 kb|
-|Piping48_AZHU8p|Shapefile of piping karst from USA Karst|.zip|Shapefile|102 kb|
-|Volcanics48_AZHU8p|Shapefile of volcanic  Pseudokarst from USA Karst|.zip|Shapefile|241 kb|
-|Carbonates48_AZHU8p|Shapefile of carbonates from USA Karst |.zip|Shapefile|1,137 kb|
+| File Name                        | Description                                                                      | Format | dtype    | Size         |
+|----------------------------------|----------------------------------------------------------------------------------|--------|----------|--------------|
+| Lineaments_30m_SD_TPI_gt1000m   | Lineaments extracted using Catalyst LINE from 30m DEM, cleaned lines <1000m     | .zip   | shapefile| 11,176 kb    |
+| Lineament_Density_rad1000m_kmkm2| Line density of above lineaments using 1000m radius                             | .tif   | Float32  | 2,299,507 kb |
+| GLHYMPS_v2Permeability           | Permeability logk x1000 extracted from GLHYMPSv2                                | .tif   | 64bit    | 5,791,738 kb |
+| GLHYMPS_v2_Porosity              | Porosity (%) from GLHYMPSv2                                                     | .tif   | 64bit    | 5,792,315 kb |
+| sLD_5_10                         | Lineament density scaled 5–10                                                   | .tif   | Uint8    | 575,195 kb   |
+| sPk_510                          | Potential karst (rasterized, scaled 5–10)                                       | .tif   | Uint8    | 839,966 kb   |
+| sPo_110                          | Matrix porosity scaled 1–10                                                     | .tif   | Uint8    | 724,639 kb   |
+| sPm_110                          | Matrix permeability scaled 1–10                                                 | .tif   | Uint8    | 724,639 kb   |
+| Sbii_v2_                         | Weighted combination of sPk, sPo, sLD, sPm                                      | .tif   | Float32  | 2,299,506 kb |
+| Evaporites48_AZHU8p             | Shapefile of evaporites from USA Karst                                         | .zip   | Shapefile| 693 kb       |
+| Piping48_AZHU8p                 | Shapefile of piping karst from USA Karst                                       | .zip   | Shapefile| 102 kb       |
+| Volcanics48_AZHU8p              | Shapefile of volcanic pseudokarst from USA Karst                               | .zip   | Shapefile| 241 kb       |
+| Carbonates48_AZHU8p             | Shapefile of carbonates from USA Karst                                         | .zip   | Shapefile| 1,137 kb     |
+
 
 ## Methodology
 
@@ -93,7 +94,7 @@ Lineaments are linear or curvilinear surface features that may reflect subsurfac
 
 The output of the LINE tool was exported as a shapefile and analyzed using the Line Density Tool in ArcGIS Pro to calculate the density of lineaments within a circular neighborhood with a radius of 1km, providing lineament density values between 0.001 and 5.55 km/km2. While the presence of lineaments likely enhances the secondary Pm and Po, the absence of lineaments does not necessarily reduce overall recharge suitability. Therefore, we scaled lineament density between 5 and 10 for the thematic layer scaled lineament density (sLD); this is consistent with other GIS-MCDA studies evaluating recharge potential (Shaban et al., 2006).
 
-** Table of parameters values used in LINE algorithm **
+**Table of parameters values used in LINE algorithm**
 
 | Parameters | Description                  | Units             | Default Values | Distance (m) |
 |---------------|---------------|---------------|---------------|---------------|
@@ -106,7 +107,7 @@ The output of the LINE tool was exported as a shapefile and analyzed using the L
 
 : Default parameters values used to detect lineaments from the TPI and SD rasters with the LINE module of Catalyst 3.0.2. Column one shows the parameter abbreviations commonly used in the literature. Column two describes the parameters. Column three describes the units each parameter utilizes, column four shows the default values, and column five is the linear distance that the default values translate to when using a 30x30 m raster.
 
-** Lineament Density scaled **
+**Lineament Density scaled**
 
 |Start Value km/km^2| End Value km/km^2| Scaled Value|
 |-------------------|------------------|-------------|
