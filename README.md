@@ -1,7 +1,9 @@
-# Dataset Title
-Arizona Subsurface Infiltration Index v.2
+# Arizona Subsurface Infiltration Index v.2
 
 **v.1 was not released and was only used for internal testing
+
+This layer and its associated data will be available on hydroshare soon
+The Sbii_v2_.tif will be published on ArcGIS online and available to the public soon
 
 
 ## Authors
