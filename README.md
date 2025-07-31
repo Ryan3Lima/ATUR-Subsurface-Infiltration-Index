@@ -1,7 +1,5 @@
 # Arizona Subsurface Infiltration Index v.2
 
-
-
 - This layer and its associated data will be available on hydroshare soon
 - The Sbii_v2_.tif will be published on ArcGIS online and available to the public soon
 
@@ -174,6 +172,3 @@ Please cite this dataset as:
 
 ## Funding
  Arizona Board of Regents for funding this research through the Technology and Research Initiative Fund (TRIF) through the Arizona Tri-University Recharge and Water Reliability Project (ATUR)
-
-
-
