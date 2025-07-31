@@ -294,5 +294,658 @@ Systems</institution>
 
 
 </sub-article>
+<sub-article article-type="notebook" id="nb-6-nb-2">
+<front-stub>
+</front-stub>
+
+<body>
+<sec id="dataset-title-nb-2">
+  <title>Dataset Title</title>
+  <p>Arizona Subsurface Infiltration Index v.2</p>
+  <p>**v.1 was not released and was only used for internal testing</p>
+  <sec id="authors-nb-2">
+    <title>Authors</title>
+    <list list-type="bullet">
+      <list-item>
+        <p>Ryan E Lima (Northern Arizona University,
+        0000-0002-5352-7215) Ryan.lima@nau.edu</p>
+      </list-item>
+      <list-item>
+        <p>Temuulen T. Sankey (Northern Arizona University,
+        0000-0002-7859-8394 )</p>
+      </list-item>
+      <list-item>
+        <p>Abraham E. Springer (Northern Arizona University,
+        0000-0003-4826-9124)</p>
+      </list-item>
+    </list>
+  </sec>
+  <sec id="description-nb-2">
+    <title>Description</title>
+    <p>This dataset represents the Arizona Subsurface Infiltration Index
+    v.2 (SbII), a raster-based index developed to estimate the relative
+    potential for water to infiltrate into subsurface lithologic units
+    across the state of Arizona. The goal of this layer is to support
+    landscape-scale planning for groundwater recharge enhancement by
+    identifying regions with favorable subsurface conditions for
+    infiltration.</p>
+    <p>The index is derived from a weighted linear combination of four
+    geologic and structural variables that influence the movement of
+    water through the vadose zone and into underlying aquifers:</p>
+    <p>Matrix Permeability (Pm) – log-transformed saturated hydraulic
+    conductivity (log K) from the GLobal HYdrogeology MaPS (GLHYMPS v2)
+    dataset (Huscroft et al., 2018), which reflects the ability of the
+    geologic matrix to transmit water.</p>
+    <p>Matrix Porosity (Po) – volumetric porosity values from GLHYMPS
+    v2, which influence the capacity for water storage within rock or
+    sediment pore spaces.</p>
+    <p>Lineament Density (LD) – estimated from topographic and
+    statistical surface derivatives using automated lineament
+    extraction. These features are used as proxies for secondary
+    permeability from faults and fractures, which can enhance
+    infiltration along structurally controlled zones.</p>
+    <p>Presence of Karst or Pseudokarst Lithologies (Pk) – derived from
+    national-scale karst mapping (Weary and Doctor, 2014), this factor
+    accounts for lithologies prone to dissolution (e.g., carbonates,
+    evaporites) or lava tube development, which can produce highly
+    permeable pathways for focused recharge.</p>
+    <p>Each input layer was reclassified to a common suitability scale
+    from 1 to 10, where 10 indicates the highest potential for
+    infiltration and 1 the lowest. This reclassification was based on
+    literature-supported thresholds, expert knowledge, and the
+    distribution of values within the Arizona study area (see
+    Methodology section for details).</p>
+    <p>This layer is intended to provide a spatially explicit,
+    state-wide estimate of infiltration suitability, particularly useful
+    for identifying regions where managed aquifer recharge (MAR) or
+    landscape management strategies (e.g., thinning, floodwater
+    retention) may have the greatest potential impact on subsurface
+    recharge. However, due to the scale and resolution of the input
+    data, this index is not appropriate for parcel-scale or engineering
+    design applications. Local field investigations are essential for
+    evaluating infiltration capacity at specific sites.</p>
+  </sec>
+  <sec id="geographic-coverage-nb-2">
+    <title>Geographic Coverage</title>
+    <list list-type="bullet">
+      <list-item>
+        <p>Latitude: [30.5162255350522, 37.8474133318948]</p>
+      </list-item>
+      <list-item>
+        <p>Longitude: [-115.428691746036, -107.349953619422]</p>
+      </list-item>
+      <list-item>
+        <p>CRS: EPSG:4269, NAD83 Geographic Coordinate System
+        (degrees)</p>
+      </list-item>
+      <list-item>
+        <p>Easting (m): [74,884.55, 850,317.80]</p>
+      </list-item>
+      <list-item>
+        <p>Northing (m): [3,381,660.51, 4,198,137.36]</p>
+      </list-item>
+      <list-item>
+        <p>CRS: EPSG:26912, NAD83 UTM Zone 12N (meters)</p>
+      </list-item>
+    </list>
+  </sec>
+  <sec id="temporal-coverage-nb-2">
+    <title>Temporal Coverage</title>
+    <list list-type="bullet">
+      <list-item>
+        <p>N.A. Created in 2025 using data released from 2014 - 2024</p>
+      </list-item>
+    </list>
+  </sec>
+  <sec id="file-descriptions-nb-2">
+    <title>File Descriptions</title>
+    <table-wrap>
+      <table>
+        <colgroup>
+          <col width="24%" />
+          <col width="29%" />
+          <col width="18%" />
+          <col width="16%" />
+          <col width="13%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>File Name</th>
+            <th>Description</th>
+            <th>Format</th>
+            <th>dtype</th>
+            <th>Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lineaments_30m_SD_TPI_gt1000m</td>
+            <td>Lineaments extracted using Catalyst LINE from 30m DEM,
+            cleaned lines smaller than 1000m removed</td>
+            <td>.zip</td>
+            <td>shapefile</td>
+            <td>11,176 kb</td>
+          </tr>
+          <tr>
+            <td>Lineament_Density_rad1000m_kmkm2</td>
+            <td>Line Density of Lineaments_30m_SD_TPI_gt1000m using
+            1000m radius</td>
+            <td>.tif</td>
+            <td>Float32</td>
+            <td>2,299,507 kb</td>
+          </tr>
+          <tr>
+            <td>GLHYMPS_v2_Permeability</td>
+            <td>Extracted values from GLHYMPSv2 polygon for permeability
+            logk x 1000</td>
+            <td>.tif</td>
+            <td>64bit</td>
+            <td>5,791,738 kb</td>
+          </tr>
+          <tr>
+            <td>GLHYMPS_v2_Porostiy</td>
+            <td>Extracted values from GLHYMPSv2 polygon for Porosity
+            %</td>
+            <td>.tif</td>
+            <td>64bit</td>
+            <td>5,792,315</td>
+          </tr>
+          <tr>
+            <td>sLD_5_10_</td>
+            <td>Lineament Density scaled 5 - 10</td>
+            <td>.tif</td>
+            <td>Uint8</td>
+            <td>575,195 kb</td>
+          </tr>
+          <tr>
+            <td>sPk_5_10_</td>
+            <td>Potential Karst, rasterized from Karst shapefile scaled
+            5 - 10</td>
+            <td>.tif</td>
+            <td>Uint8</td>
+            <td>839,966 kb</td>
+          </tr>
+          <tr>
+            <td>sPo_1_10_</td>
+            <td>Matrix Porosity scaled 1 - 10</td>
+            <td>.tif</td>
+            <td>Uint8</td>
+            <td>724,639 kb</td>
+          </tr>
+          <tr>
+            <td>sPm_1_10_</td>
+            <td>Matrix Permeability (logkx1000) scaled 1 - 10</td>
+            <td>.tif</td>
+            <td>Uint8</td>
+            <td>724,639 kb</td>
+          </tr>
+          <tr>
+            <td>Sbii_v2_</td>
+            <td>Weighted Linear Combination of sPk, sPo, sLD, sPm</td>
+            <td>.tif</td>
+            <td>Float32</td>
+            <td>2,299,506 kb</td>
+          </tr>
+          <tr>
+            <td>Evaporites48_AZHU8p</td>
+            <td>Shapefile of evaporites from USA Karst</td>
+            <td>.zip</td>
+            <td>Shapefile</td>
+            <td>693 kb</td>
+          </tr>
+          <tr>
+            <td>Piping48_AZHU8p</td>
+            <td>Shapefile of piping karst from USA Karst</td>
+            <td>.zip</td>
+            <td>Shapefile</td>
+            <td>102 kb</td>
+          </tr>
+          <tr>
+            <td>Volcanics48_AZHU8p</td>
+            <td>Shapefile of volcanic Pseudokarst from USA Karst</td>
+            <td>.zip</td>
+            <td>Shapefile</td>
+            <td>241 kb</td>
+          </tr>
+          <tr>
+            <td>Carbonates48_AZHU8p</td>
+            <td>Shapefile of carbonates from USA Karst</td>
+            <td>.zip</td>
+            <td>Shapefile</td>
+            <td>1,137 kb</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </sec>
+  <sec id="methodology-nb-2">
+    <title>Methodology</title>
+    <sec id="subsurface-infiltration-index-sbii-nb-2">
+      <title>Subsurface Infiltration Index (SbII)</title>
+      <p>The Subsurface Infiltration Index (SbII) was created by
+      combining layers of Matrix permeability (Pm) and Porosity (Po),
+      Lineament Density (LD), and Potential karst of Pseudo-karst
+      (PK).</p>
+      <fig>
+        <caption><p>Sankey diagram showing the relative contributions of
+        permeability, porosity, lineament density, and lithology
+        (potential for karst/pseudo-karst).</p></caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="images/fig-sankey-sbii.png" />
+      </fig>
+      <sec id="matrix-permeability-pm-and-porosity-po-nb-2">
+        <title>Matrix Permeability (Pm) and Porosity (Po)</title>
+        <p>Pm and Po values were extracted from the GLobal Hydrogeology
+        MaPS 2.0 (GLHYMPS v2) dataset (Huscroft et al., 2018). Our study
+        area contained 11,057 polygons with values for saturated
+        log-permeability ranging from -16 to -10 and porosity values
+        ranging from 0.01 - 0.28. The attribute values were extracted,
+        the polygons were rasterized at a 30m resolution and then
+        re-scaled to values (1-10). See the appendix for more details on
+        the rescaling of Po and Pm.</p>
+        <table-wrap>
+          <caption>
+            <p>Classification and re-scaling of GLHYMPS v2 data for
+            suitability mapping</p>
+          </caption>
+          <table>
+            <colgroup>
+              <col width="25%" />
+              <col width="25%" />
+              <col width="25%" />
+              <col width="25%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>LogK x 100 (Permeability)</th>
+                <th>Scaled Permeability (sPm)</th>
+                <th>Porosity x 100 (%)</th>
+                <th>Scaled Porosity (sPo)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>-1650 to -1595</td>
+                <td>1</td>
+                <td>0 - 2</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>-1595 to -1540</td>
+                <td>2</td>
+                <td>2 - 5</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>-1540 to -1485</td>
+                <td>3</td>
+                <td>5 - 8</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>-1485 to -1430</td>
+                <td>4</td>
+                <td>8 - 10</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>-1430 to -1375</td>
+                <td>5</td>
+                <td>10 - 13</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>-1375 to -1320</td>
+                <td>6</td>
+                <td>13 - 17</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>-1320 to -1265</td>
+                <td>7</td>
+                <td>17 - 21</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>-1265 to -1210</td>
+                <td>8</td>
+                <td>21 - 24</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>-1210 to -1155</td>
+                <td>9</td>
+                <td>24 - 26</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>-1155 to -1052</td>
+                <td>10</td>
+                <td>26 - 28</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec id="lineament-denisty-ld-nb-2">
+        <title>Lineament Denisty (LD)</title>
+        <p>Lineaments are linear or curvilinear surface features that
+        may reflect subsurface geologic structures(O’leary et al.,
+        1976). Lineament density(LD) is commonly used in studies
+        evaluating potential recharge zones (Al-Adamat, 2012; Chenini et
+        al., 2010; Chowdhury et al., 2010). Lineaments were extracted
+        from U.S. Geologic Survey, 2019 3D Elevation Program
+        1-arc-second tiles using a combination of methods. First,
+        topographic position index (TPI) which estimates neighborhood
+        convexity and concavity was calculated using a circular
+        neighborhood with a radius of 5<italic>m</italic> The TPI layer
+        was then rendered as a multi-directional hillshade and exported
+        from ArcGIS to Catalyst 3.0.2, where the LINE module was used to
+        detect edges and link lines (Salui et al., 2018). The default
+        parameters for the LINE function were used, and the resulting
+        lineaments were brought back into ArcGIS and cleaned to remove
+        any edge effects. A second lineament analysis was conducted as
+        with the TPI, using a standard deviation focal statistic of
+        elevation with a 5 <italic>m</italic> radius. This raster was
+        also rendered, exported, and processed as before. These two
+        rasters provided complementary sets of combined lineaments. Due
+        to the resolution and parameters chose, man-made lineaments
+        (roads, railways, and power-lines) were not primarily delineated
+        by the algorithm in either analysis; however buffers around
+        roads were randomly sampled and spot-checked to ensure man-made
+        lineaments were not included.</p>
+        <p>The output of the LINE tool was exported as a shapefile and
+        analyzed using the Line Density Tool in ArcGIS Pro to calculate
+        the density of lineaments within a circular neighborhood with a
+        radius of 1km, providing lineament density values between 0.001
+        and 5.55 km/km2. While the presence of lineaments likely
+        enhances the secondary Pm and Po, the absence of lineaments does
+        not necessarily reduce overall recharge suitability. Therefore,
+        we scaled lineament density between 5 and 10 for the thematic
+        layer scaled lineament density (sLD); this is consistent with
+        other GIS-MCDA studies evaluating recharge potential (Shaban et
+        al., 2006).</p>
+        <p>** Table of parameters values used in LINE algorithm **</p>
+        <table-wrap>
+          <caption>
+            <p>Default parameters values used to detect lineaments from
+            the TPI and SD rasters with the LINE module of Catalyst
+            3.0.2. Column one shows the parameter abbreviations commonly
+            used in the literature. Column two describes the parameters.
+            Column three describes the units each parameter utilizes,
+            column four shows the default values, and column five is the
+            linear distance that the default values translate to when
+            using a 30x30 m raster.</p>
+          </caption>
+          <table>
+            <colgroup>
+              <col width="20%" />
+              <col width="20%" />
+              <col width="20%" />
+              <col width="20%" />
+              <col width="20%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Parameters</th>
+                <th>Description</th>
+                <th>Units</th>
+                <th>Default Values</th>
+                <th>Distance (m)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>RADI</td>
+                <td>filter radius</td>
+                <td>Pixels (30m)</td>
+                <td>10</td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td>GTHR</td>
+                <td>edge gradient threshold</td>
+                <td>Luminance (0-255)</td>
+                <td>100</td>
+                <td>NA</td>
+              </tr>
+              <tr>
+                <td>FTHR</td>
+                <td>line fitting threshold</td>
+                <td>Pixels (30m)</td>
+                <td>3</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>LTHR</td>
+                <td>curve length threshold</td>
+                <td>Pixels (30m)</td>
+                <td>30</td>
+                <td>900</td>
+              </tr>
+              <tr>
+                <td>ATHR</td>
+                <td>angular difference threshold</td>
+                <td>degrees</td>
+                <td>30</td>
+                <td>NA</td>
+              </tr>
+              <tr>
+                <td>DTHR</td>
+                <td>linking distance threshold</td>
+                <td>Pixels (30m)</td>
+                <td>20</td>
+                <td>600</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>** Lineament Density scaled **</p>
+        <table-wrap>
+          <table>
+            <thead>
+              <tr>
+                <th>Start Value km/km^2</th>
+                <th>End Value km/km^2</th>
+                <th>Scaled Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0.000</td>
+                <td>0.001</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>0.002</td>
+                <td>1.000</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>1.001</td>
+                <td>2.000</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>2.001</td>
+                <td>3.000</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>3.001</td>
+                <td>4.000</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>4.001</td>
+                <td>5.552 (max)</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec id="potential-karst-or-pseudo-karst-pk-nb-2">
+        <title>Potential Karst or Pseudo-Karst (PK)</title>
+        <p>Shapefiles of potential karst or pseudo-karst lithology (PK)
+        were sourced from the Karst in the United States digital map
+        compilation and database (Weary an Doctor, 2014). The polygons
+        were clipped to the AZHU8 study area and converted to a
+        30<italic>m</italic> raster, and assigned values based on their
+        potential for enhanced recharge through faults, fractures,
+        sinkholes, or caves. The classes were non-karst = 5 (neutral),
+        volcanics with potential karst or pseudo-karst (such as lava
+        tubes) = 7, evaporates at or near the surface = 8, and
+        carbonates at or near the surface = 10, resulting in a scaled
+        potential karst layer (sPK).</p>
+      </sec>
+      <sec id="creation-of-sbii-nb-2">
+        <title>Creation of SbII</title>
+        <p>SbII is a weighted linear sum of sPm, sPo, sLD, and sPK, with
+        weights 0.4, 0.25, 0.15, and 0.2, respectively; the equation is
+        shown below. The SbII can be seen as an estimate of the
+        infiltration potential of the subsurface lithology excluding
+        soils (which are included in the SMII index). Due to the
+        resolution of the geologic mapping that produced the GLHYMPS v2
+        dataset and general lack of detailed geologic mapping in much of
+        Arizona, focused recharge in stream channels is not addressed by
+        this index, and it can be seen as a conservative estimate of
+        recharge potential state-wide.</p>
+        <p><disp-formula><alternatives>
+        <tex-math><![CDATA[
+        SbII = sPm * 0.4 + sPo * 0.25 + sLD * 0.15 + sPK * 0.2
+        ]]></tex-math>
+        <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>S</mml:mi><mml:mi>b</mml:mi><mml:mi>I</mml:mi><mml:mi>I</mml:mi><mml:mo>=</mml:mo><mml:mi>s</mml:mi><mml:mi>P</mml:mi><mml:mi>m</mml:mi><mml:mo>*</mml:mo><mml:mn>0.4</mml:mn><mml:mo>+</mml:mo><mml:mi>s</mml:mi><mml:mi>P</mml:mi><mml:mi>o</mml:mi><mml:mo>*</mml:mo><mml:mn>0.25</mml:mn><mml:mo>+</mml:mo><mml:mi>s</mml:mi><mml:mi>L</mml:mi><mml:mi>D</mml:mi><mml:mo>*</mml:mo><mml:mn>0.15</mml:mn><mml:mo>+</mml:mo><mml:mi>s</mml:mi><mml:mi>P</mml:mi><mml:mi>K</mml:mi><mml:mo>*</mml:mo><mml:mn>0.2</mml:mn></mml:mrow></mml:math></alternatives></disp-formula></p>
+      </sec>
+    </sec>
+  </sec>
+  <sec id="disclaimer-nb-2">
+    <title>Disclaimer</title>
+    <p>This dataset was developed to support regional-scale suitability
+    mapping of subsurface infiltration potential in Arizona. While every
+    effort was made to use the best available data and methods, many of
+    the input datasets (e.g., GLHYMPS v2 hydrogeologic polygons,
+    3DEP-derived lineaments, karst lithology maps) are generalized or
+    coarse in spatial resolution. As such, this index is not suitable
+    for site-specific assessments or design purposes.</p>
+    <p>Local site characteristics—such as soil thickness, fracture
+    connectivity, and surface recharge dynamics—can vary considerably
+    even within high-index zones. Field-based assessments, subsurface
+    investigations, or finer-scale modeling are essential before making
+    site-level management or engineering decisions.</p>
+    <p>The weights applied in the Subsurface Infiltration Index (SbII)
+    reflect a single, expert-informed judgment of relative importance
+    based on literature review, data availability, and expert knowledge.
+    Alternative weighting schemes may be equally valid, and users are
+    encouraged to adapt the methodology to suit their own objectives and
+    regional contexts.</p>
+    <p>This dataset is part of an ongoing research effort to better
+    understand and map the potential for enhanced infiltration and
+    managed aquifer recharge in semi-arid landscapes. We welcome
+    feedback and collaboration to refine and improve this tool for
+    future applications.</p>
+  </sec>
+  <sec id="licensing-nb-2">
+    <title>Licensing</title>
+    <p>CC BY-NC 4.0 https://creativecommons.org/licenses/by-nc/4.0/</p>
+  </sec>
+  <sec id="references-nb-2">
+    <title>References</title>
+    <list list-type="bullet">
+      <list-item>
+        <p>Ahmadi, H., Pekkan, E., &amp; Seyitoğlu, G. (2023). Automatic
+        lineaments detection using radar and optical data with an
+        emphasis on geologic and tectonic implications: A case study of
+        Kabul Block, eastern Afghanistan. Geocarto International, 38(1),
+        2231400. https://doi.org/10.1080/10106049.2023.2231400</p>
+      </list-item>
+      <list-item>
+        <p>Chenini, I., Mammou, A. B., &amp; El May, M. (2010).
+        Groundwater Recharge Zone Mapping Using GIS-Based Multi-criteria
+        Analysis: A Case Study in Central Tunisia (Maknassy Basin).
+        Water Resources Management, 24(5), 921–939.
+        https://doi.org/10.1007/s11269-009-9479-1</p>
+      </list-item>
+      <list-item>
+        <p>Chowdhury, A., Jha, M. K., &amp; Chowdary, V. M. (2010).
+        Delineation of groundwater recharge zones and identification of
+        artificial recharge sites in West Medinipur district, West
+        Bengal, using RS, GIS and MCDM techniques. Environmental Earth
+        Sciences, 59(6), 1209–1222.
+        https://doi.org/10.1007/s12665-009-0110-9</p>
+      </list-item>
+      <list-item>
+        <p>Huscroft, J., Gleeson, T., Hartmann, J., &amp; Börker, J.
+        (2018). Compiling and Mapping Global Permeability of the
+        Unconsolidated and Consolidated Earth: GLobal HYdrogeology MaPS
+        2.0 (GLHYMPS 2.0). Geophysical Research Letters, 45(4),
+        1897–1904. https://doi.org/10.1002/2017GL075860</p>
+      </list-item>
+      <list-item>
+        <p>O’leary, D. W., Friedman, J. D., &amp; Pohn, H. A. (1976).
+        Lineament, linear, lineation: Some proposed new standards for
+        old terms. Geological Society of America Bulletin, 87(10),
+        1463–1469. https://doi.org/10.1130/0016-7606(1976)87</p>
+      </list-item>
+      <list-item>
+        <p>Salui, C. L. (2018). Methodological Validation for Automated
+        Lineament Extraction by LINE Method in PCI Geomatica and MATLAB
+        based Hough Transformation. Journal of the Geological Society of
+        India, 92(3), 321–328.
+        https://doi.org/10.1007/s12594-018-1015-6</p>
+      </list-item>
+      <list-item>
+        <p>Shaban, A., Khawlie, M., &amp; Abdallah, C. (2006). Use of
+        remote sensing and GIS to determine recharge potential zones:
+        The case of Occidental Lebanon. Hydrogeology Journal, 14(4),
+        433–443. https://doi.org/10.1007/s10040-005-0437-6</p>
+      </list-item>
+      <list-item>
+        <p>Weary, D. J., &amp; Doctor, D. H. (2014). Karst in the United
+        States: A Digital Map Compilation and Database (Open-File Report
+        2014–1156; Open-File Report, p. 27). U.S. Geological Survey,
+        U.S. Department of Interior.
+        https://pubs.usgs.gov/of/2014/1156/</p>
+      </list-item>
+    </list>
+  </sec>
+  <sec id="citation-nb-2">
+    <title>Citation</title>
+    <p>Please cite this dataset as: &gt; Lima, R.E., Sankey, T.T.,
+    Springer, A.E. (2025). Arizona Subsurface Infiltration Index v.2 ,
+    2025 [Dataset]. HydroShare. https://doi.org/10.xxxx/xxxxx</p>
+  </sec>
+  <sec id="related-publications-nb-2">
+    <title>Related Publications</title>
+    <list list-type="bullet">
+      <list-item>
+        <p>Lima et al., (In Review). Mapping landscape suitability for
+        thinning to reduce evapotranspiration and enhance groundwater
+        recharge in semi-arid ponderosa pine forests. Journal of
+        Hydrology: Regional Studies.</p>
+      </list-item>
+      <list-item>
+        <p>Zaleski et al., (In Review). Floodwater Enhanced Recharge
+        Potential in Arizona. Journal of the American Water Resources
+        Association</p>
+      </list-item>
+    </list>
+  </sec>
+  <sec id="funding-nb-2">
+    <title>Funding</title>
+    <p>Arizona Board of Regents for funding this research through the
+    Technology and Research Initiative Fund (TRIF) through the Arizona
+    Tri-University Recharge and Water Reliability Project (ATUR)</p>
+  </sec>
+</sec>
+</body>
+
+
+
+<back>
+</back>
+
+
+</sub-article>
 
 </article>
